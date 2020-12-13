@@ -1,4 +1,4 @@
-# ![ANONYMOUS BOX](https://tryhackme.com/room/anonymous)
+# [ANONYMOUS BOX](https://tryhackme.com/room/anonymous)
 
 (Replace with your own)
 IP = 10.10.223.23
