@@ -1,9 +1,9 @@
-#	ANONYMOUS BOX
+#	![ANONYMOUS BOX](https://tryhackme.com/room/anonymous/)
 
 (Replace with your own)
 IP = 10.10.223.23
 
-## Detailed Report in the report.pdf file
+## Detailed Report in the ![report.pdf](report.pdf) file
 
 ##### You can use the linpeas.sh to find the weaknesses instead, just upload it on the victim machine using wget or curl and run it
 #### If you want to be more creative you can upgrade to a meterpreter shell to make it easier.
