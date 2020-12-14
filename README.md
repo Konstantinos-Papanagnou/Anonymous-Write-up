@@ -8,6 +8,39 @@ IP = 10.10.223.23
 ##### You can use the linpeas.sh to find the weaknesses instead, just upload it on the victim machine using wget or curl and run it
 #### If you want to be more creative you can upgrade to a meterpreter shell to make it easier.
 
+
+## Update
+#### If we actually use exif on the images we can get some interesting data
+
+```
+exif puppos.jpeg
+
+EXIF tags in 'puppos.jpeg' ('Intel' byte order):
+--------------------+----------------------------------------------------------
+Tag                 |Value
+--------------------+----------------------------------------------------------
+Image Width         |5616
+Image Length        |3744
+Bits per Sample     |8, 8, 8
+Photometric Interpre|RGB
+Image Description   |Three Pembroke Welsh Corgis side by side outdoors. Approve
+Manufacturer        |Canon
+Model               |Canon EOS 5D Mark II
+Orientation         |Top-left
+Samples per Pixel   |3
+X-Resolution        |300.0000
+Y-Resolution        |300.0000
+Resolution Unit     |Inch
+Software            |Adobe Photoshop CC 2018 (Macintosh)
+Date and Time       |2019:02:18 12:24:51
+Artist              |Photographer: Tatyana Panova
+Corrupt data
+The data provided does not follow the specification.
+ExifEntry: The tag 'YCbCrSubSampling' contains an invalid number of components (1, expected 2).
+```
+
+##### This could contain some password or hint to a password for the ssh server, or could be completely missleading. I leave that up to you to figure out!
+
 ## QUESTION 1
 #### Enumerate the machine. How many ports are open?
 4
